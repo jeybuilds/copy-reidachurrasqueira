@@ -1,0 +1,204 @@
+/*efeitos globais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+/*fim dos efeitos globais*/
+
+/*corpo da pagina*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+/*fim do corpo da pagina*/
+
+/*topo da pagina*/
+header .cabeca {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background:linear-gradient(to top, orangered, #131716);
+    padding:15px 0;
+}
+
+header .cabeca .tittle {
+    display: flex;
+    position:relative;
+    z-index: 1;
+}
+
+header .cabeca .tittle img {
+    width:55px;
+    height:55px;
+    border-radius:50%; 
+}
+
+
+header .cabeca .tittle img:last-of-type{
+width: 20px;
+height:20px;
+position: absolute;
+left: 80px;
+top: 2px;
+transform: rotate(-15deg); 
+} 
+
+header .cabeca .tittle h1 {
+    color: #fff;
+    font-size: 24px;
+    font-size: 30px;
+}
+
+header .cabeca .tittle a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+header .cabeca .tittle span {
+    font-size: 24px;
+    color: #ffd54a;
+}
+/*fim do topo*/
+
+/*parte com churrasqueiras*/
+.pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.fotos img {
+    width: 255px;
+    height: 325px;
+    border-radius: 5px;
+}
+/*fim da parte com churrasqueiras*/
+
+/*cta*/
+main .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 0 0;
+}
+
+main .cta a {
+    text-decoration: none;
+    color: #131716;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+main .cta img {
+    width: 20px;
+}
+
+main .cta h2 {
+    font-size: 25px;
+}
+/*fim do cta*/
+
+/*rodapé da pagina*/
+.contato_final {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to bottom, orangered, black );
+} 
+
+.contato_final .contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.contato_final img {
+    width: 18px;
+    height: 18px;
+}
+
+.contato_final a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.contato_final p {
+    color: #fff;
+}
+/*fim da parte do rodape com contato*/
+
+/*pseudo elementos*/
+.contato_final a:hover {
+    color: gold;
+}
+
+main .cta a:hover {
+    color: gold;
+}
+/*fim doa pseudo elementos*/
+
+/*media queries/resposivo*/
+@media(max-width: 425px) {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    header .cabeca .tittle h1 {
+        font-size: 20px;
+    }
+
+    header .cabeca .tittle img:last-of-type{
+    width: 20px;
+    height:20px;
+    position: absolute;
+    left: 79px;
+    top: -3px;;
+    transform: rotate(-15deg); 
+    }  
+
+    .fotos img {
+    width: 255px;
+    height: 325px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    }
+
+    .contato_final {
+        flex-direction: column;
+        min-height: 210px;
+        margin: 25px 0 0 0;
+    }
+
+    .contato_final .contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    }
+}
+/*fim do media queries /responsivo*/ 
+
+
