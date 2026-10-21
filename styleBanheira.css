@@ -1,0 +1,212 @@
+/*efeitos globais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+/*fim dos efeitos globais*/
+
+/*corpo da pagina*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+/*fim do corpo da pagina*/
+
+/*topo da pagina*/
+header .cabeca {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background:linear-gradient(to top, orangered, #131716);
+    padding:15px 0;
+}
+
+header .cabeca .tittle {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+header .cabeca .tittle img {
+    width:55px;
+    height:55px;
+    border-radius:50%; 
+    margin: 0 15px;
+}
+
+header .cabeca .tittle h1 {
+    color: #fff;
+    font-size: 25px;
+    margin: 21px 0 0 0;
+}
+
+header .cabeca .tittle a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+header .cabeca .tittle span {
+    font-size: 24px;
+    color: #ffd54a;
+}
+/*fim do topo*/
+
+/*parte do video*/
+.pagina, .pagina .fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+video {
+    height: 550px;
+}
+
+.pagina p {
+    margin: 10px 0 0 0;
+}
+/*fim da parte com video*/
+
+
+/*cta*/
+main .cta {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+    text-align: center;
+}
+
+main .cta a {
+    text-decoration: none;
+    color: #131716;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.cta p {
+    font-size: 25px;
+}
+
+main .cta img {
+    width: 25px;
+    margin: 3px 2px 0 0;
+}
+
+main .cta h2 {
+    font-size: 25px;
+    border: 2px solid #93a39f;
+    border-radius: 10px;
+    padding: 3px 3px;
+    margin: 10px 0 0 0;
+
+}
+/*fim do cta*/
+
+/*rodapé da pagina*/
+.contato_final {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to bottom, orangered, black );
+} 
+
+.contato_final .contato {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.contato_final img {
+    width: 18px;
+    height: 18px;
+}
+
+.contato_final a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.contato_final p {
+    color: #fff;
+}
+/*fim da parte do rodape com contato*/
+
+/*pseudo elementos*/
+.contato_final a:hover {
+    color: gold;
+}
+
+main .cta a:hover, main .cta h2:hover {
+    color: gold;
+    border-color: gold;
+}
+/*fim doa pseudo elementos*/
+
+/*media queries/responsivo*/
+@media all and (max-width: 768px) {
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    header .cabeca .tittle img {
+        width: 45px;
+        height: 45px;
+        margin: 15px 5px 0 0;
+    }
+
+    header .cabeca .tittle h1, header .cabeca .tittle span {
+        font-size: 20px;
+    }
+
+    .pagina {
+        text-align: center;
+    }
+
+    video {
+        height: 350px;
+    }
+
+    .cta h2 {
+        margin: 15px 0 0 0;
+    }
+
+    .contato_final {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 25px 0 0 0;
+    }
+
+    .contato_final .contato {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    }
+
+    .contato_final .contato p, .contato_final .contato a, .contato_final .jj p, .contato_final .jj a {
+        font-size: 18px;
+    }
+}
+/*fim do media queries/responsivo*/

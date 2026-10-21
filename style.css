@@ -1,0 +1,473 @@
+/*globais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*fim dos globais*/
+
+/*começo do corpo*/
+body {
+    background-color:#dfe1e5; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+/*fim do corpo*/
+
+/*topo da pagina*/
+header .cabeca {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #131716;
+    padding:15px 0;
+    background: linear-gradient(to top, orangered, #131716); 
+    position: fixed;
+    width: 100%;
+}
+
+header .cabeca .tittle {
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    z-index: 1;
+}
+
+header .cabeca .tittle img {
+    width: 48px;
+    height: 45px;
+    margin: 0 5px 0 0;
+    border-radius:50%; 
+}
+
+header .cabeca .tittle h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+header .cabeca .tittle span {
+    font-size: 24px;
+    color: #ffd54a;
+}
+
+header .cabeca nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 8px;
+    list-style:none ;
+}
+
+header .cabeca nav ul li a {
+    text-decoration: none;
+    color:#131716;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+/*fim do topo da pagina*/
+
+/*banner da pagina*/
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-image: url(assets/img/master/reiChurrasco.png); 
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner p, .banner a {
+     font-size: 20px;
+     color:#000;
+     text-decoration: none;
+     background-color: #fff;
+     border-radius: 8px;
+     padding: 0 5px;
+     margin: 8px 0;
+}
+/*fim do banner*/
+
+/*parte quem somos*/
+.topo .sobre {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.topo .sobre .quem_somos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.topo .sobre .quem_somos p {
+    width: 50%;
+} 
+
+.topo .sobre .funcionamento {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+/*fim da parte quem somos*/ 
+
+/*primeiro cta*/
+.primeiro_cta {
+    border-right: 2px dashed #000;
+    border-left: 2px dashed #000; 
+    background-color: orangered;
+    height: 150px;
+    width: 50%;
+    margin: 8px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 0 20px 5px #585858;
+}
+
+.primeiro_cta p {
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.primeiro_cta a {
+    font-size: 20px;
+    text-decoration: none;
+    color:#000;
+    background-color: #fff;
+}
+
+.primeiro_cta img {
+    width: 20px;
+}
+/*fim do primeiro cta*/
+
+/*area com entrega*/
+.principal .entrega {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+background-color: orangered;
+margin: 25px 0;
+height: 300px;
+box-shadow: 0 0 20px 5px #585858;
+}
+
+.principal .entrega p {
+    color:#000;
+    background-color: #dfe1e5;
+    border-radius: 5px;
+    padding: 5px;
+    border-radius: 8px;
+}
+/*fim da area com entrega*/
+
+/*parte com as vendas*/
+.vendas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.vendas img {
+    width: 450px;
+    height: 350px;
+    border-radius: 25px;
+    margin: 0 0 15px 0;
+    padding: 5px;
+}
+
+.vendas .dupla div { 
+    text-align: center;
+}
+
+.vendas .dupla p {
+    margin: 0 0 25px 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+.vendas .dupla div h3 {
+    font-size: 16x;
+}
+
+.principal .vendas .dupla div {
+    margin: 0 0 15px 0;
+    border: 2px solid #93a39f;
+    border-radius: 8px;
+    padding: 0 auto;
+}
+/*fim da parte com as vendas*/
+
+/*parte com segundo cta*/
+.final .segundo_cta {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+    background-color: orangered;
+    height: 180px;
+    box-shadow: 0 0 20px 5px #585858;
+}
+
+.final .segundo_cta p, .final .segundo_cta a, .final .segundo_cta h2 {
+    background-color: #fff;
+    margin: 8px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 2px 3px;
+    color:#000;
+    font-size: 20px;
+} 
+
+.final .segundo_cta img {
+    margin: 0 3px 0 0;
+    width: 20px;
+}
+
+
+/*fim da sengunda parte com cta*/ 
+
+/*parte com mapa*/
+.maps {
+    text-align: center;
+}
+
+.maps h3 {
+    margin: 25px 0;
+    font-size: 23px;
+    text-shadow: #585858 1px 1px 3px;
+}
+
+.maps iframe {
+    width: 100%;
+    margin: 0 0 25px 0;
+}
+/*fim da parte com mapa*/
+
+/*parte do rodape com contato*/
+.contato_final {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to bottom, orangered, #131716);
+} 
+
+.contato_final .contato {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.contato_final img {
+    width: 18px;
+    height: 18px;
+    margin: 0 5px 0 0;
+}
+
+.contato_final p {
+    color: #fff;
+}
+
+.contato_final a {
+    text-decoration: none;
+    color:#fff;
+}
+/*fim da parte do rodape com contato*/
+
+/*peseudo elementos*/
+header .cabeca nav ul a:hover {
+background-color: orangered;
+color: #fff;
+}
+
+.banner a:hover {
+    background-color: orangered;
+    color: #fff;
+}
+
+.primeiro_cta a:hover {
+    color: gold;
+}
+
+.final .segundo_cta a:hover {
+    background-color: #000;
+    color:#fff
+}
+
+.contato_final a:hover {
+color:gold;
+text-shadow: #585858 1px 1px 3px;
+}
+
+.funcionamento .contato a:hover {
+    color: gold;
+} 
+/*fim dos pseudos elementos*/
+
+/*media queries/resposivo*/
+@media (max-width: 768px) {
+    *{
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header .cabeca {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    header .cabeca .tittle h1, header .cabeca .tittle span {
+        font-size: 20px;
+        margin: 15px 0 0 0;
+    }
+
+    header .cabeca nav ul li a{
+        padding: 2px;
+        font-size: 17px;
+    }
+
+    .banner {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        height: 200px;
+        margin: 99px 0 0 0;
+        width: 100%;
+    }
+
+    .topo .sobre .cta_cima .hora p, .topo .sobre .cta_cima strong, .topo .sobre .cta_cima .hora h3 {
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .topo .sobre .quem_somos {
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .topo .sobre .quem_somos h2 {
+        font-size: 18px;
+        margin: 0 0 5px 0;
+    }
+
+    .topo .sobre .quem_somos p {
+        width: 100%;
+        font-size: 18px;
+        margin: 0 0 15px 0;
+    }
+
+    .primeiro_cta {
+        width: 90%;
+    }
+
+    .primeiro_cta p {
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 8px;
+    }
+
+    .primeiro_cta a {
+        font-size: 16px;
+    }
+
+    .principal .entrega {
+        height: 135px;
+    }
+
+    .principal .entrega p {
+        font-size: 13px;
+    }
+
+    .principal .entrega img {
+        width: 95px;
+    }
+
+    .principal .vendas .dupla p {
+        font-size: 15px;
+        margin: 0 auto;
+        font-size: 13px;
+        width: 85%;
+        margin: 0 0 35px 50px;
+    }
+
+    .principal .vendas .dupla h3 {
+        font-size: 18px;
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .principal .vendas .dupla img {
+        width: 250px;
+        height: auto;
+    }
+
+    .principal .vendas .dupla div p {
+        font-size: 18px;
+        margin: 0 auto;
+    }
+
+    .final .segundo_cta {
+        text-align: center;
+    }
+
+    .final .segundo_cta p {
+        font-size: 18px;
+        padding: 3px;
+    }
+
+    .final .segundo_cta img {
+    width: 20px;
+    }
+
+    .contato_final {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .contato_final .contato {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+}
+/* fim do media queries/resposivo*/
